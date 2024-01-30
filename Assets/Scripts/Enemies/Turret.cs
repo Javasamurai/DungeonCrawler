@@ -5,6 +5,12 @@ public class Turret : EnemyController
 {
     [SerializeField] private float shootDelay = 0.5f;
 
+    protected override void Awake()
+    {
+        base.Awake();
+        shootDelay += Time.time;
+    }
+
     protected override void Move()
     {
         // Turret doesn't move
@@ -14,7 +20,7 @@ public class Turret : EnemyController
     {
         var bullet = Instantiate<Bullet>(bulletPrefab, transform.position, Quaternion.identity);
         bullet.direction = (player.transform.position - transform.position).normalized;
-        bullet.Shoot();
+        bullet.Shoot(false);
     }
 
     protected override void Update()
@@ -24,7 +30,7 @@ public class Turret : EnemyController
         if (Time.time > shootDelay)
         {
             Shoot();
-            shootDelay = Time.time + shootDelay;
+            shootDelay = Time.time;
         }
     }
 }

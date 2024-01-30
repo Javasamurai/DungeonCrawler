@@ -1,11 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    private TextMeshProUGUI powerupText;
+    [SerializeField]
+    private Animator powerupAnimator;
+
     [SerializeField]
     PlayerController player;
     [SerializeField] RoomConfig[] rooms;
@@ -87,7 +93,8 @@ public class GameManager : MonoBehaviour
 
     private void AnnouncePowerup()
     {
-        Debug.Log("Current powerup: " + currentPowerup);
+        powerupText.text = string.Format("Curse unlocked: {0}", currentPowerup);
+        powerupAnimator.SetTrigger("Show");
     }
 
     private void AquirePowerup()

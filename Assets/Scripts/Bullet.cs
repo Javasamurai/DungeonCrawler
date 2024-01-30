@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float speed = 10.0f;
     public Vector3 direction;
     private bool active;
+    private bool isPlayerBullet;
 
     private void Start()
     {
@@ -24,15 +25,16 @@ public class Bullet : MonoBehaviour
         Debug.Log("Bullet collided with " + other.gameObject.name);
         var enemyController = other.gameObject.GetComponent<EnemyController>();
         
-        if (enemyController != null)
+        if (enemyController != null && isPlayerBullet)
         {
             enemyController.DealDamage(10);
             Destroy(gameObject);
         }
     }
 
-    public void Shoot()
+    public void Shoot(bool isPlayerBullet)
     {
+        this.isPlayerBullet = isPlayerBullet;
         active = true;
     }
 }

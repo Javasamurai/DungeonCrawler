@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
         lookDirection = lookDirection.normalized;
         bullet.direction = lookDirection;
         shootTime = Time.time;
-        bullet.Shoot();
+        bullet.Shoot(true);
     }
 
     public void TakeDamage(float damageValue)
@@ -136,13 +136,14 @@ public class PlayerController : MonoBehaviour
             if (GameManager.Instance.IsAllEnemiesDead())
             {
                 GameManager.Instance.EnterNextRoom();
+                ResetPlayer();
             }
         }
     }
     
     public void ResetPlayer()
     {
-        transform.localScale = new Vector3(1, 1, 1);
+        transform.localScale = new Vector3(2, 2, 1);
         Time.timeScale = 1;
     }
 

@@ -8,7 +8,7 @@ public abstract class EnemyController : MonoBehaviour
     public bool isDead => health.isDead;
     protected PlayerController player;
     
-    private void Awake()
+    protected virtual void Awake()
     {
         player = FindObjectOfType<PlayerController>();
     }
