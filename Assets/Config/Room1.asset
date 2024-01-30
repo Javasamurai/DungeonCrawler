@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6ccb81ddb54bce9df97efe6561773d, type: 3}
+  m_Name: Room1
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 8886065006120774403, guid: 42bfa36ca2832481cab113ca4e668226, type: 3}
+  - {fileID: 4124949883964777594, guid: 2622bb2c2d9ed4459bf9a759e422d127, type: 3}
+  - {fileID: 5160954298589733595, guid: 3d6242ddc15af47c78c77a4a8ebaec71, type: 3}
+  obstacles: []
+  powerup: 0
