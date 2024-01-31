@@ -7,14 +7,21 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] Collider2D boundary;
     [SerializeField]
     private TextMeshProUGUI powerupText;
     [SerializeField]
+    private TextMeshProUGUI timerText;
+    [SerializeField]
     private Animator powerupAnimator;
+    
+    private float timer = 0f;
 
     [SerializeField]
     PlayerController player;
     [SerializeField] RoomConfig[] rooms;
+    
+    [SerializeField] Transform spawnPoint;
     
     private RoomConfig currentRoom;
     private int currentRoomIndex = 0;
@@ -45,34 +52,50 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        EnterRoom(0);
+        player.enabled = false;
+        StartCoroutine(StartGame());
     }
-    
+
+    private IEnumerator StartGame()
+    {
+        var powerupsCount = Enum.GetNames(typeof(Powerup)).Length;
+        currentPowerup = (Powerup) Random.Range(0, powerupsCount);
+        AnnouncePowerup();
+        player.transform.position = spawnPoint.position;
+
+        while (timer < 3.0f)
+        {
+            yield return new WaitForSeconds(1.0f);
+            timer++;
+            timerText.text = string.Format("{0}", 3 - timer);
+        }
+        
+        timer = 0f;
+        timerText.text = string.Empty;
+        
+        player.enabled = true;
+        EnterRoom(currentRoomIndex);
+    }
+
     public void EnterNextRoom()
     {
         ExitRoom();
         currentRoomIndex++;
-        EnterRoom(currentRoomIndex);
+        StartCoroutine(StartGame());
     }
 
     private void EnterRoom(int index)
     {
         currentRoom = rooms[index];
-        var powerupsCount = Enum.GetNames(typeof(Powerup)).Length;
-
-        currentPowerup = (Powerup) Random.Range(0, powerupsCount);
-
-        currentPowerup = Powerup.TURNBASED;
 
         foreach (var enemy in currentRoom.enemies)
         {
-            var randomPosition = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), 0);
+            var randomPosition = new Vector3(Random.Range(boundary.bounds.min.x, boundary.bounds.max.x), Random.Range(boundary.bounds.min.y, boundary.bounds.max.y), 0);
             
             var addedEnemy = Instantiate(enemy, randomPosition, Quaternion.identity);
             enemies.Add(addedEnemy);
         }
         
-        AnnouncePowerup();
         AquirePowerup();
     }
     
@@ -133,5 +156,7 @@ public class GameManager : MonoBehaviour
             }
         }
         enemies.Clear();
+        // Disable player
+        player.enabled = false;
     }
 }

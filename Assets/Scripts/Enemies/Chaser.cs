@@ -15,7 +15,7 @@ public class Chaser : EnemyController
 
     protected override void Move()
     {
-        Chase();
+        Chase(moveSpeed);
     }
 
     protected override void Shoot()

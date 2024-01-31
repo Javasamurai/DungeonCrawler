@@ -4,6 +4,7 @@ using UnityEngine.PlayerLoop;
 public class Turret : EnemyController
 {
     [SerializeField] private float shootDelay = 0.5f;
+    private float shootDelayTimer;
 
     protected override void Awake()
     {
@@ -15,24 +16,15 @@ public class Turret : EnemyController
     {
         // Turret doesn't move
     }
-
-    protected override void Shoot()
-    {
-        var bullet = Instantiate<Bullet>(bulletPrefab, transform.position, Quaternion.identity);
-        bullet.direction = (player.transform.position - transform.position).normalized;
-        bullet.Shoot(false);
-    }
-
+    
     protected override void Update()
     {
         base.Update();
-
-        // if (Time.time - shootDelay > 0)
-        // {
-        //     Shoot();
-        //     shootDelay = Time.time ;
-        // }
-        // Shoot after delay
-        
+        shootDelayTimer += Time.deltaTime;
+        if (shootDelayTimer > shootDelay)
+        {
+            Shoot();
+            shootDelayTimer = 0.0f;
+        }
     }
 }

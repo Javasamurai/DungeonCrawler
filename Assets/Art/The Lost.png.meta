@@ -1,0 +1,2718 @@
+fileFormatVersion: 2
+guid: ddb4374eeec60432a8b2ea85e3cbf3b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The Lost_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 342
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59448b297cee9464e9ce6c8d0cf55908
+      internalID: -2093323136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43463150ac7ba4a278e7ae4c040f45cc
+      internalID: -426549987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a400101059940aa835512e69a2c609
+      internalID: 649653281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 344
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560a207d9c23246ac81d2cec2ec39540
+      internalID: -1103544042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 342
+        width: 63
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfecd5313f5042068fc7363a536d5bc
+      internalID: 203666633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_5
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c8580f864c34932833cb59d64411aa
+      internalID: 1743847053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 344
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7de0d89273d41f5b57238f7f2a16ce
+      internalID: -726409276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_7
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 344
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4666f731512eb47518a54e315dd40f1c
+      internalID: -39143095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_8
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 344
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776f63c2498894dfd92180aae5664c64
+      internalID: -385370520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b026e4b59c84976b2153e2b6c3c5fa
+      internalID: 1139720394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_10
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 344
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf4865e77f774c05adc3c534a84823e
+      internalID: 1633398833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 344
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4689ebedd65b948de81cae32da7b2ece
+      internalID: 1073249538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc57f0360acf8464da79c57520fc0922
+      internalID: 329468090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 342
+        width: 88
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcb81f61a72b40c2b3a27ebc992564b
+      internalID: 1018936990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38398d0b47264653ace54bfd50b0460
+      internalID: -1716089566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f4034f83ee448c89ef802da022ba6f
+      internalID: -828062039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_16
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 344
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a82924de8549208096c2b5e944e20
+      internalID: 283875684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_17
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 344
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ec53f7abf2e41abae06584f9240506
+      internalID: -1337436652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_18
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 344
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36db70cf0cb64dbdaf1d8e59d83d1eb
+      internalID: 382526158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_19
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c0bfd16c1df43d488d08aad4d16315
+      internalID: -1048191236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_20
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4624ec81df5334e03abce47c9f0eed82
+      internalID: -1135536249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_21
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 344
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546562f53cd9b4d519e3b7607368be25
+      internalID: 1223879800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_22
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 344
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c287feff013a47ea9a72b8049291234
+      internalID: -1620345793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_23
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eba565d66f341ddb7e262fb946d992
+      internalID: -1142201726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076fa514cb3254d76be76d8ec9da841c
+      internalID: -295839554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 307
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7bc3f30a009428d845779d878dd505
+      internalID: -1945121717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 306
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d773fd4e993b6490bb1d3a3b559c2c92
+      internalID: -1359648406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 307
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2c52f8e386c4ff39be550a71e99b9f
+      internalID: 1145196505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_28
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 306
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68353d5fbae1544d89cd2f23743e5ba1
+      internalID: -47471838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 307
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab13336ca0ad4dff9adfba486e1f0d0
+      internalID: 1603050626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_30
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 306
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf014d7be0394769b2da43eca13c554
+      internalID: 1572325103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 307
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48344e479452b46828240eaa9103a527
+      internalID: 1798788998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_32
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 306
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e756c5e999544a9284d81403eed859e
+      internalID: 1624685730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_33
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 291
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b628da3280e41ef85b20c6fb007e26
+      internalID: -1870048454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_34
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 326
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdac31e08b0ca41f5afeb693e2e55b6f
+      internalID: 689944579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_35
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 250
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f30f4e0404c4e4f8e86ce5b46bc024
+      internalID: -1682526660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 287
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23443e9e333d249fdb054497f7a26605
+      internalID: 553003527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 289
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f3959825c4d4a8ab9e101293672d22
+      internalID: 1720221608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_38
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 289
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b325de133b9745189646210efd0da1d
+      internalID: 764453736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_39
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 291
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8100c588abee4ad7b460a0c876302e0
+      internalID: 1826338565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 262
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062421ff44f774bb8a6485e831f70d8d
+      internalID: 258506975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_41
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 262
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39705735b877a4292b9e53fe68766203
+      internalID: -1334046112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 262
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437d05b5907ba40f99fe0816c3674241
+      internalID: 1387342764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_43
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 272
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24937fd19ef2a41288e6a6c635727bf9
+      internalID: 370863168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_44
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 264
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7549e6cce198f40988bff3e08b906923
+      internalID: 186698013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_45
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 266
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c4e8c5e9da74d6e8c541b092936615
+      internalID: -841991518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_46
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 236
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bf71cef9c9e4a45aceb0ff66a6f392
+      internalID: -1928589441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_47
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 244
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ea9f197adb84a08b04b26840620efd
+      internalID: 1536865398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 246
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f07725b2e2ea40fe89123ed51842038
+      internalID: 1991348612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_49
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 199
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1d1dd9e63b44c218ebc46e589353bc
+      internalID: 1349442709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 203
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6a053da366247f38a3e2884885ded6
+      internalID: 1866409337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_51
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 202
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e958e1c6059ae46c4b73135d5d9d2158
+      internalID: -1852337097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_52
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 202
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6d0de419f3d4b439a61efb8e12c656
+      internalID: 1952846891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_53
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 229
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de477e968d87c48d8bc5227b1ccac65b
+      internalID: 1549419936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 213
+        width: 77
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb9369b8af814540a9ad5a29be8b0c0
+      internalID: -191379624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_55
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 215
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101edb0748bf04d2f84fd8088d774651
+      internalID: -1481283350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_56
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 215
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fe0fa37b6e949bc8c0c22411625837
+      internalID: -1200312829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_57
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 215
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f133ddd8d349045c5a1bf543668935bb
+      internalID: 677503921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_58
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 181
+        width: 41
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727fdf83625ca428d8a83dd3bad18b80
+      internalID: -628348273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_59
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 183
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf26b5d78826429ba4cafe3ae73a2a1
+      internalID: 509399680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_60
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4131e82ddcd724bbd8d04d0a9d5f2090
+      internalID: 982347777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_61
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f167ca5197c82429f9f140dcdcc3fbf3
+      internalID: -1253578348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 181
+        width: 57
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa0ed27791fc402e82279bee9bffb75
+      internalID: 943482315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_63
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1467467fef894d45867e24f1e5ab7a4
+      internalID: 659461645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_64
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 183
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787350d73ec3149a1a4d738486c14aaa
+      internalID: 238766925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_65
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b61417c427744ec8abdbc622b38ea3a
+      internalID: 308260864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_66
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 183
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59268f553e5c44a9eb7e2e927d78be44
+      internalID: 966046131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_67
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 183
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99eb9265a2da04768bfb2e3cb1fb1bd5
+      internalID: 1051608644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_68
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 183
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dc2818b598d4022b0e5839d74a9173
+      internalID: 926126826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_69
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 183
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2130c5002b024ce2b2b1d79c8f60658
+      internalID: 52020426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_70
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 181
+        width: 68
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974576e93ad5c402ca33d9426c5cef48
+      internalID: 376359868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_71
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4c1a1a092b34665806803f5498c91b
+      internalID: -799160066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_72
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 183
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821f22e72c7be4fcbb4f01f013cfda72
+      internalID: -227568876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_73
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 183
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e968bd04f46dc42918f5ab8cdb9ecf21
+      internalID: 818395545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_74
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 102
+        width: 14
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bdc035cd643407ea472f5fc9ffee7f
+      internalID: 1403335825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_75
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 135
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338617f2aa30b4d3cb13882cc8313577
+      internalID: -628317075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_76
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 138
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe18b7a95b1674588ad12d3936bad998
+      internalID: -1229103011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_77
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 134
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63db39750b4c147a78a83de14fe4d9f5
+      internalID: -727402487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 138
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404263e1c7afe4af1b73e21debfcc968
+      internalID: 250950011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_79
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 118
+        width: 65
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091991612fd244c5d9eedf7154b1ea8c
+      internalID: -798172226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_80
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 92
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75070a47cc24b482996ee05e0aa8c8c6
+      internalID: -1644173606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_81
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 73
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a475467c52cb4935b2e9f6d8bb091b1
+      internalID: 1502943054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_82
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0e27bd57c0640b0a4eb7777f51efa2
+      internalID: 712625923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_83
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 73
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65439bda454c9493a8e43bd4212fc83b
+      internalID: 686037114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_84
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 57
+        width: 62
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fba7f5434bf4f5b9e3e08ef67e2386
+      internalID: -1855716343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_85
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 59
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48449e7a5586f4ce5a53683ff0950d4d
+      internalID: 402871719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_86
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 59
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e437228617b124b70a92b37fa9fe33f2
+      internalID: 1128988325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_87
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 20
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e6292ce445346b3a113db2fbb7afd0
+      internalID: 1279603061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_88
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 20
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e105ec5faae84901b794ad4790b0b97
+      internalID: 1952295984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_89
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 20
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc98c50265a146ab87531eef11cd775
+      internalID: 1381872166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_90
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 36
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeeee9e5ce5244ffaa3b561c9ee7c2e2
+      internalID: 1932699089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_91
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 31
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f8868781ea4449ab27399d1b6468e4
+      internalID: -1630901954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_92
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 36
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a1f24c89bbd4781b4d773343f12b9e
+      internalID: -1883093813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_93
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 20
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd68c6a127c1844f792d83c36da13e09
+      internalID: 1588875950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_94
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 17
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbce1da3ab036402a937666997eb7267
+      internalID: 1302508838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_95
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 35
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d213afe72894ebf8faeed3d5877c4b
+      internalID: 133544775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_96
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 7
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280430dae77df4401b4ac26a8210b7ab
+      internalID: -460660407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_97
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 15
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603d8749d616d4da7bb78a1878539738
+      internalID: 1890490807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_98
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 15
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859e32b67b8ab47c2b8d0e730b38bfd9
+      internalID: -1077020723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_99
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 17
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a656e50cd5b7428c80050d30b4545ba
+      internalID: -1130342160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_100
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 21
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324630b961cf04f2f80fa81bc0983b45
+      internalID: -173415450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_101
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 19
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44639b1596a92405f8be2a75179fe260
+      internalID: 1873966479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_102
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 19
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c795ab1f672934603a71090b87e1729b
+      internalID: 1971596005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_103
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab599f8b5c5441fca11d91b6cdb3815
+      internalID: 143384966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_104
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d98cd02bde9a4820815dfff87a3eda2
+      internalID: -1861123020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_105
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 21
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e355c5ca5c1c047f28000103b0b58b7b
+      internalID: -710326966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_106
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 19
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065ba7cf7cb56440e9ec41fee3be1a14
+      internalID: 156963871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_107
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 8
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6b22d3b92d54617b23cbc9753c63e0
+      internalID: -650418248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_108
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 8
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc36c9ba24d6c4aa39c5f736be210add
+      internalID: 730165095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_109
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 6
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba5eb7b9b2ba4976ad0866e6b0f2c6c
+      internalID: 1673518181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_110
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 8
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0283699f678e450d849c099d973d84c
+      internalID: 2108232975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_111
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 8
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af06b0714d34541099f0394150afbae3
+      internalID: -546184498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_112
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 8
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a3e47146d7d4b65a442968b6bcaf06
+      internalID: -498366702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_113
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 8
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c761f2395cbf4c4689f31bbd6ce7fee
+      internalID: 1317888863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_114
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 8
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c17c350f1ebd4f259250ee38ff89c8c
+      internalID: 1565761488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Lost_115
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 8
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423788ead604b4a4fa186e788c064996
+      internalID: -1733008630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      The Lost_0: -2093323136
+      The Lost_1: -426549987
+      The Lost_10: 1633398833
+      The Lost_100: -173415450
+      The Lost_101: 1873966479
+      The Lost_102: 1971596005
+      The Lost_103: 143384966
+      The Lost_104: -1861123020
+      The Lost_105: -710326966
+      The Lost_106: 156963871
+      The Lost_107: -650418248
+      The Lost_108: 730165095
+      The Lost_109: 1673518181
+      The Lost_11: 1073249538
+      The Lost_110: 2108232975
+      The Lost_111: -546184498
+      The Lost_112: -498366702
+      The Lost_113: 1317888863
+      The Lost_114: 1565761488
+      The Lost_115: -1733008630
+      The Lost_12: 329468090
+      The Lost_13: 1018936990
+      The Lost_14: -1716089566
+      The Lost_15: -828062039
+      The Lost_16: 283875684
+      The Lost_17: -1337436652
+      The Lost_18: 382526158
+      The Lost_19: -1048191236
+      The Lost_2: 649653281
+      The Lost_20: -1135536249
+      The Lost_21: 1223879800
+      The Lost_22: -1620345793
+      The Lost_23: -1142201726
+      The Lost_24: -295839554
+      The Lost_25: -1945121717
+      The Lost_26: -1359648406
+      The Lost_27: 1145196505
+      The Lost_28: -47471838
+      The Lost_29: 1603050626
+      The Lost_3: -1103544042
+      The Lost_30: 1572325103
+      The Lost_31: 1798788998
+      The Lost_32: 1624685730
+      The Lost_33: -1870048454
+      The Lost_34: 689944579
+      The Lost_35: -1682526660
+      The Lost_36: 553003527
+      The Lost_37: 1720221608
+      The Lost_38: 764453736
+      The Lost_39: 1826338565
+      The Lost_4: 203666633
+      The Lost_40: 258506975
+      The Lost_41: -1334046112
+      The Lost_42: 1387342764
+      The Lost_43: 370863168
+      The Lost_44: 186698013
+      The Lost_45: -841991518
+      The Lost_46: -1928589441
+      The Lost_47: 1536865398
+      The Lost_48: 1991348612
+      The Lost_49: 1349442709
+      The Lost_5: 1743847053
+      The Lost_50: 1866409337
+      The Lost_51: -1852337097
+      The Lost_52: 1952846891
+      The Lost_53: 1549419936
+      The Lost_54: -191379624
+      The Lost_55: -1481283350
+      The Lost_56: -1200312829
+      The Lost_57: 677503921
+      The Lost_58: -628348273
+      The Lost_59: 509399680
+      The Lost_6: -726409276
+      The Lost_60: 982347777
+      The Lost_61: -1253578348
+      The Lost_62: 943482315
+      The Lost_63: 659461645
+      The Lost_64: 238766925
+      The Lost_65: 308260864
+      The Lost_66: 966046131
+      The Lost_67: 1051608644
+      The Lost_68: 926126826
+      The Lost_69: 52020426
+      The Lost_7: -39143095
+      The Lost_70: 376359868
+      The Lost_71: -799160066
+      The Lost_72: -227568876
+      The Lost_73: 818395545
+      The Lost_74: 1403335825
+      The Lost_75: -628317075
+      The Lost_76: -1229103011
+      The Lost_77: -727402487
+      The Lost_78: 250950011
+      The Lost_79: -798172226
+      The Lost_8: -385370520
+      The Lost_80: -1644173606
+      The Lost_81: 1502943054
+      The Lost_82: 712625923
+      The Lost_83: 686037114
+      The Lost_84: -1855716343
+      The Lost_85: 402871719
+      The Lost_86: 1128988325
+      The Lost_87: 1279603061
+      The Lost_88: 1952295984
+      The Lost_89: 1381872166
+      The Lost_9: 1139720394
+      The Lost_90: 1932699089
+      The Lost_91: -1630901954
+      The Lost_92: -1883093813
+      The Lost_93: 1588875950
+      The Lost_94: 1302508838
+      The Lost_95: 133544775
+      The Lost_96: -460660407
+      The Lost_97: 1890490807
+      The Lost_98: -1077020723
+      The Lost_99: -1130342160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

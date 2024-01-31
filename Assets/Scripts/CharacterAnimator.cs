@@ -14,6 +14,7 @@ public struct RenderInfo
 {
     public Sprite[] animationFrames;
     public Direction direction;
+    public bool flipX;
 }
 public class CharacterAnimator : AnimationEntity
 {
@@ -39,6 +40,7 @@ public class CharacterAnimator : AnimationEntity
                 {
                     spriteRenderer.sprite = renderInfo.animationFrames[0];
                 }
+                spriteRenderer.flipX = renderInfo.flipX;
             }
         }
     }

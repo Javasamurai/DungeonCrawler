@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
                 Time.timeScale = 1.5f;
                 break;
             case Powerup.DOT:
-                bulletPrefab.transform.localScale = new Vector3(.5f, .5f, 1);
+                bulletPrefab.transform.localScale = new Vector3(.1f, .1f, 1);
                 break;
             case Powerup.MISDIRECT:
                 isReverseControls = true;

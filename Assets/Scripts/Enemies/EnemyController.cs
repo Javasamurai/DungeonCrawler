@@ -2,12 +2,26 @@ using UnityEngine;
 
 public abstract class EnemyController : MonoBehaviour
 {
-    [SerializeField] protected float damageValue = 10;
     [SerializeField] protected Bullet bulletPrefab;
     [SerializeField] private Health health;
+    private CharacterAnimator characterAnimatorHead;
+    private CharacterAnimator characterAnimatorBody;
+    private Direction moveDirection = Direction.Down;
+    
+    [SerializeField] float maxChaseSpeed = 3.0f;
+    [SerializeField] float minChaseSpeed = 1.0f;
+    
+    [SerializeField] private RenderInfo[] headRender;
+    [SerializeField] private RenderInfo[] bodyRender;
+    [SerializeField] private SpriteRenderer headRenderer;
+    [SerializeField] private SpriteRenderer bodyRenderer;
+    [SerializeField] private float fps = 10.0f;
+    [SerializeField] protected float damageValue = 10;
     public bool isDead => health.isDead;
     protected bool canMove = true;
+    private float chaseSpeed = 3.0f;
     private bool isChasing = false;
+    protected bool isMoving = false;
     protected bool turnBased = false;
     protected PlayerController player;
     
@@ -16,12 +30,17 @@ public abstract class EnemyController : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         isChasing = false;
         canMove = true;
+        characterAnimatorHead = new CharacterAnimator();
+        characterAnimatorBody = new CharacterAnimator();
+        characterAnimatorHead.Init(headRenderer, (int) fps);
+        characterAnimatorBody.Init(bodyRenderer, (int) fps);
     }
     
     public void StartChasing()
     {
         isChasing = true;
         turnBased = false;
+        chaseSpeed = Random.Range(minChaseSpeed, maxChaseSpeed);
     }
     
     public void StartTurnBased()
@@ -31,13 +50,19 @@ public abstract class EnemyController : MonoBehaviour
     }
 
     protected abstract void Move();
-    protected abstract void Shoot();
 
+    protected virtual void Shoot()
+    {
+        var bullet = Instantiate<Bullet>(bulletPrefab, transform.position, Quaternion.identity);
+        bullet.direction = (player.transform.position - transform.position).normalized;
+        bullet.Shoot(false);
+    }
+    
     protected virtual void Update()
     {
         if (isChasing)
         {
-            Chase();
+            Chase(chaseSpeed);
         }
         else
         {
@@ -48,9 +73,15 @@ public abstract class EnemyController : MonoBehaviour
         {
             canMove = player.isMoving;
         }
+        AnimationUpdate();
+    }
+    private void AnimationUpdate()
+    {
+        characterAnimatorHead.Update(headRender, moveDirection, isMoving);
+        characterAnimatorBody.Update(bodyRender, moveDirection, isMoving);
     }
     
-    protected virtual void Chase()
+    protected virtual void Chase(float moveSpeed)
     {
         if (!canMove)
         {
@@ -58,7 +89,25 @@ public abstract class EnemyController : MonoBehaviour
         }
         var direction = player.transform.position - transform.position;
         direction = direction.normalized;
-        transform.Translate(direction * Time.deltaTime * 5);
+        isMoving = true;
+
+        if (direction.x > 0)
+        {
+            moveDirection = Direction.Right;
+        }
+        else if (direction.x < 0)
+        {
+            moveDirection = Direction.Left;
+        }
+        else if (direction.y > 0)
+        {
+            moveDirection = Direction.Up;
+        }
+        else if (direction.y < 0)
+        {
+            moveDirection = Direction.Down;
+        }
+        transform.Translate(direction * Time.deltaTime * moveSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4171545077926566653}
   - component: {fileID: 4183341669986400997}
   m_Layer: 0
-  m_Name: Bubble_Body
+  m_Name: Patroller_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 128065065, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+  m_Sprite: {fileID: 258506975, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1297372276058701073}
   - component: {fileID: 1790305215731275691}
   m_Layer: 0
-  m_Name: Bubble_Head
+  m_Name: Patroller_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -798302453, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+  m_Sprite: {fileID: -1945121717, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -180,9 +180,9 @@ GameObject:
   - component: {fileID: 2737591699155903615}
   - component: {fileID: 617639669058735819}
   - component: {fileID: 8553181069638615318}
-  - component: {fileID: 8350292662035432164}
+  - component: {fileID: 2028805598839458037}
   m_Layer: 7
-  m_Name: Turret
+  m_Name: Patroller
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headRenderer: {fileID: 1790305215731275691}
   bodyRenderer: {fileID: 4183341669986400997}
---- !u!114 &8350292662035432164
+--- !u!114 &2028805598839458037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8029930877313980258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4266825a247b4f65b6154a2d611b3499, type: 3}
+  m_Script: {fileID: 11500000, guid: 72c232f856d646e4a950bcfef2f085df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
@@ -299,71 +299,65 @@ MonoBehaviour:
   minChaseSpeed: 1
   headRender:
   - animationFrames:
-    - {fileID: -1451456394, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1945840093, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -798302453, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: 813016148, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -2046973734, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -886170918, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 1603050626, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 1572325103, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 0
     flipX: 0
   - animationFrames:
-    - {fileID: -2046211933, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -87043644, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1478052414, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: -1945121717, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -1359648406, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 1
     flipX: 0
   - animationFrames:
-    - {fileID: -1451456394, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1945840093, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -798302453, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: 813016148, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -2046973734, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -886170918, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 1145196505, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -47471838, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 2
     flipX: 1
   - animationFrames:
-    - {fileID: -2046211933, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -87043644, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1478052414, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 1145196505, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -47471838, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 3
     flipX: 0
   bodyRender:
   - animationFrames:
-    - {fileID: -1451456394, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1945840093, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -798302453, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: 813016148, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -2046973734, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -886170918, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 258506975, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -1334046112, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 1387342764, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 370863168, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 186698013, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -841991518, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 0
     flipX: 0
   - animationFrames:
-    - {fileID: -2046211933, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -87043644, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1478052414, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 258506975, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -1334046112, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 1387342764, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 370863168, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 186698013, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -841991518, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 1
     flipX: 0
   - animationFrames:
-    - {fileID: -2046211933, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -87043644, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1478052414, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -2046211933, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -87043644, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1478052414, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 258506975, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -1334046112, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 1387342764, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 370863168, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 186698013, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -841991518, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 2
-    flipX: 0
+    flipX: 1
   - animationFrames:
-    - {fileID: -1451456394, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -1945840093, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -798302453, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: 813016148, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -2046973734, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
-    - {fileID: -886170918, guid: 3ce2c5feef21343d4860fbb098750c9b, type: 3}
+    - {fileID: 258506975, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -1334046112, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 1387342764, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 370863168, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: 186698013, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
+    - {fileID: -841991518, guid: ddb4374eeec60432a8b2ea85e3cbf3b0, type: 3}
     direction: 3
     flipX: 0
   headRenderer: {fileID: 1790305215731275691}
   bodyRenderer: {fileID: 4183341669986400997}
   fps: 10
-  damageValue: 10
-  shootDelay: 0.5
+  damageValue: 20
+  moveSpeed: 5
+  moveDistance: 3
