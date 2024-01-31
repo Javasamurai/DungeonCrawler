@@ -1,14 +1,21 @@
-using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Chaser : EnemyController
 {
-    [SerializeField] float moveSpeed = 5.0f;
+    [SerializeField] float maxMoveSpeed = 3.0f;
+    [SerializeField] float minMoveSpeed = 1.0f;
+    private float moveSpeed = 5.0f;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        moveSpeed = Random.Range(minMoveSpeed, maxMoveSpeed);
+    }
+
     protected override void Move()
     {
-        var direction = player.transform.position - transform.position;
-        direction = direction.normalized;
-        transform.Translate(direction * Time.deltaTime * moveSpeed);
+        Chase();
     }
 
     protected override void Shoot()

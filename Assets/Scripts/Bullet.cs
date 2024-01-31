@@ -22,7 +22,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Bullet collided with " + other.gameObject.name);
         var enemyController = other.gameObject.GetComponent<EnemyController>();
         
         if (enemyController != null && isPlayerBullet)
@@ -36,5 +35,6 @@ public class Bullet : MonoBehaviour
     {
         this.isPlayerBullet = isPlayerBullet;
         active = true;
+        AudioManager.Instance.PlaySFX(SoundType.PLAYER_ATTACK);
     }
 }

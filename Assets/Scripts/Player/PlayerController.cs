@@ -13,12 +13,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private RenderInfo[] bodyRender;
     [SerializeField] private SpriteRenderer headRenderer;
     [SerializeField] private SpriteRenderer bodyRenderer;
+    [SerializeField] private Collider2D collider2D;
     public Health health;
     
     private CharacterAnimator characterAnimatorHead;
     private CharacterAnimator characterAnimatorBody;
     
-    private bool isMoving;
+    public bool isMoving;
+    private bool isReverseControls;
     private Rigidbody2D rigidbody2D;
     private Vector3 lookDirection = Vector3.up;
     private Direction moveDirection = Direction.Down;
@@ -36,7 +38,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         TakeInput();
-
         AnimationUpdate();
     }
     
@@ -44,11 +45,19 @@ public class PlayerController : MonoBehaviour
     {
         var x = Input.GetAxis("Horizontal");
         var y = Input.GetAxis("Vertical");
+        if (isReverseControls)
+        {
+            x = -x;
+            y = -y;
+        }
+        
         var shootDirectionX = Input.GetAxis("Fire1");
         var shootDirectionY = Input.GetAxis("Fire2");
         
         transform.Translate(new Vector3(x, y, 0) * (Time.deltaTime * speed));
         
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, collider2D.bounds.min.x, collider2D.bounds.max.x), 
+            Mathf.Clamp(transform.position.y, collider2D.bounds.min.y, collider2D.bounds.max.y), 0);
         if (Input.GetButton("Fire1") || Input.GetButton("Fire2"))
         {
             if (Time.time - shootTime > shootDelay)
@@ -114,18 +123,17 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, 1);
                 break;
             case Powerup.TIME:
-                Time.timeScale = 0.5f;
+                Time.timeScale = 1.5f;
                 break;
             case Powerup.DOT:
-                break;
-            case Powerup.MAGNET:
+                bulletPrefab.transform.localScale = new Vector3(.5f, .5f, 1);
                 break;
             case Powerup.MISDIRECT:
-                break;
-            case Powerup.TURNBASED:
+                isReverseControls = true;
                 break;
             default:
-                throw new ArgumentOutOfRangeException(nameof(currentPowerup), currentPowerup, null);
+                Debug.Log("No powerup found");
+                break;
         }
     }
 
@@ -145,6 +153,8 @@ public class PlayerController : MonoBehaviour
     {
         transform.localScale = new Vector3(2, 2, 1);
         Time.timeScale = 1;
+        isReverseControls = false;
+        bulletPrefab.transform.localScale = Vector3.one;
     }
 
     public void Knockback(Vector3 transformPosition)

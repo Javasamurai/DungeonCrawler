@@ -27,10 +27,12 @@ public class Turret : EnemyController
     {
         base.Update();
 
-        if (Time.time > shootDelay)
-        {
-            Shoot();
-            shootDelay = Time.time;
-        }
+        // if (Time.time - shootDelay > 0)
+        // {
+        //     Shoot();
+        //     shootDelay = Time.time ;
+        // }
+        // Shoot after delay
+        
     }
 }

@@ -6,19 +6,59 @@ public abstract class EnemyController : MonoBehaviour
     [SerializeField] protected Bullet bulletPrefab;
     [SerializeField] private Health health;
     public bool isDead => health.isDead;
+    protected bool canMove = true;
+    private bool isChasing = false;
+    protected bool turnBased = false;
     protected PlayerController player;
     
     protected virtual void Awake()
     {
         player = FindObjectOfType<PlayerController>();
+        isChasing = false;
+        canMove = true;
     }
     
+    public void StartChasing()
+    {
+        isChasing = true;
+        turnBased = false;
+    }
+    
+    public void StartTurnBased()
+    {
+        isChasing = false;
+        turnBased = true;
+    }
+
     protected abstract void Move();
     protected abstract void Shoot();
 
     protected virtual void Update()
     {
-        Move();
+        if (isChasing)
+        {
+            Chase();
+        }
+        else
+        {
+            Move();
+        }
+        canMove = true;
+        if (turnBased)
+        {
+            canMove = player.isMoving;
+        }
+    }
+    
+    protected virtual void Chase()
+    {
+        if (!canMove)
+        {
+            return;
+        }
+        var direction = player.transform.position - transform.position;
+        direction = direction.normalized;
+        transform.Translate(direction * Time.deltaTime * 5);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

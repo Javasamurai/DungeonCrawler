@@ -60,13 +60,9 @@ public class GameManager : MonoBehaviour
         currentRoom = rooms[index];
         var powerupsCount = Enum.GetNames(typeof(Powerup)).Length;
 
-        // currentPowerup = (Powerup) Random.Range(0, powerupsCount);
-        currentPowerup = Powerup.BIGG;
-        
-        AnnouncePowerup();
-        AquirePowerup();
+        currentPowerup = (Powerup) Random.Range(0, powerupsCount);
 
-        // Debug.Log("Current powerup: " + currentPowerup);
+        currentPowerup = Powerup.TURNBASED;
 
         foreach (var enemy in currentRoom.enemies)
         {
@@ -75,6 +71,9 @@ public class GameManager : MonoBehaviour
             var addedEnemy = Instantiate(enemy, randomPosition, Quaternion.identity);
             enemies.Add(addedEnemy);
         }
+        
+        AnnouncePowerup();
+        AquirePowerup();
     }
     
     public bool IsAllEnemiesDead()
@@ -100,6 +99,27 @@ public class GameManager : MonoBehaviour
     private void AquirePowerup()
     {
         player.AquirePowerup(currentPowerup);
+        if (currentPowerup == Powerup.MAGNET)
+        {
+            foreach (var enemy in enemies)
+            {
+                if (enemy != null)
+                {
+                    enemy.StartChasing();
+                }
+            }
+        }
+        
+        if (currentPowerup == Powerup.TURNBASED)
+        {
+            foreach (var enemy in enemies)
+            {
+                if (enemy != null)
+                {
+                    enemy.StartTurnBased();
+                }
+            }
+        }
     }
     
     private void ExitRoom()

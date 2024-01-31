@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 8886065006120774403, guid: 42bfa36ca2832481cab113ca4e668226, type: 3}
-  - {fileID: 8350292662035432164, guid: 7cdd732f8904442c9a3fc28ea989813a, type: 3}
+  - {fileID: 8886065006120774403, guid: 42bfa36ca2832481cab113ca4e668226, type: 3}
   - {fileID: 5160954298589733595, guid: 3d6242ddc15af47c78c77a4a8ebaec71, type: 3}
   obstacles: []
   powerup: 0

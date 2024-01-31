@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 617639669058735819}
   - component: {fileID: 8886065006120774403}
   - component: {fileID: 8553181069638615318}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boney1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -282,7 +282,8 @@ MonoBehaviour:
   damageValue: 1
   bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
   health: {fileID: 8553181069638615318}
-  moveSpeed: 2
+  maxMoveSpeed: 2
+  minMoveSpeed: 1
 --- !u!114 &8553181069638615318
 MonoBehaviour:
   m_ObjectHideFlags: 0

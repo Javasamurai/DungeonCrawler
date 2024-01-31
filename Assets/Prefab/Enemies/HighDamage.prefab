@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 617639669058735819}
   - component: {fileID: 8553181069638615318}
   - component: {fileID: 5160954298589733595}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HighDamage
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -296,5 +296,6 @@ MonoBehaviour:
   damageValue: 25
   bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
   health: {fileID: 8553181069638615318}
-  moveSpeed: 1.5
+  maxMoveSpeed: 1
+  minMoveSpeed: 0.5
   explosionPrefab: {fileID: 1215746303076103958, guid: f436690f683b14266821f35a617ba990, type: 3}
