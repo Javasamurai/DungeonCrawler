@@ -133,47 +133,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e89a2b8c9544d218538e7a63978e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
   shootDelay: 0.5
-  fps: 5
+  playerConfig: {fileID: 11400000, guid: e4f3aadc04e2a41d0835d49f9e768dd2, type: 2}
+  powerupConfig: {fileID: 11400000, guid: 38673bd4c7cc1475caa33fc8eb6c3f27, type: 2}
   bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
   headRender:
   - animationFrames:
     - {fileID: -1238953319, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: 1716779709, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 0
+    flipX: 0
   - animationFrames:
     - {fileID: -1574580785, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: -2140150173, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 1
+    flipX: 0
   - animationFrames:
     - {fileID: 2066659890, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: -1171609373, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 2
+    flipX: 0
   - animationFrames:
     - {fileID: -116310005, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: 2059048801, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 3
+    flipX: 0
   bodyRender:
   - animationFrames:
     - {fileID: -1999313481, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: 708059190, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 0
+    flipX: 0
   - animationFrames:
     - {fileID: -2081279706, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: -1371376749, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 1
+    flipX: 0
   - animationFrames:
     - {fileID: -203971857, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: 817675138, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 2
+    flipX: 0
   - animationFrames:
     - {fileID: -1371376749, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     - {fileID: -1806325007, guid: bbe494a5c2cb44a8fb5f7e31561e2a0c, type: 3}
     direction: 3
+    flipX: 0
   headRenderer: {fileID: 7249199730192344552}
   bodyRenderer: {fileID: 2675642413250766325}
+  collider2D: {fileID: 0}
   health: {fileID: 7059493070089594646}
+  isMoving: 0
 --- !u!50 &689716877438514607
 Rigidbody2D:
   serializedVersion: 4

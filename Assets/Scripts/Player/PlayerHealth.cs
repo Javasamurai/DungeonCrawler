@@ -9,11 +9,13 @@ public class PlayerHealth : Health
     {
         base.TakeDamage(damage);
         healthBar.UpdateHealth(health);
+        var randomValue = Random.Range(0, 2);
+        AudioManager.Instance.PlaySFX(randomValue == 0 ? SoundType.PLAYER_HURT_1 : SoundType.PLAYER_HURT_2);
     }
     
     protected override void Die()
     {
-        transform.GetChild(0).parent = null;
-        Destroy(gameObject);
+        GameManager.Instance.GameOver();
+        AudioManager.Instance.PlaySFX(SoundType.PLAYER_DEATH);
     }
 }

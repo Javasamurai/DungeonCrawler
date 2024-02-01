@@ -23,6 +23,7 @@ public class HighDamage : Chaser
         // Check if player is in range
         var playerPosition = player.transform.position;
         var distance = Vector2.Distance(playerPosition, transform.position);
+        
         if (distance < 2)
         {
             player.TakeDamage(damageValue);

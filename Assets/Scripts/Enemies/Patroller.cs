@@ -14,6 +14,10 @@ public class Patroller : EnemyController
 
     protected override void Move()
     {
+        if (!canMove)
+        {
+            return;
+        }
         transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         var distance = Vector3.Distance(transform.position, initialPosition);
         

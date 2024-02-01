@@ -16,4 +16,9 @@ public abstract class Health : MonoBehaviour
     }
 
     protected abstract void Die();
+
+    public void Reset()
+    {
+        health = 100;
+    }
 }

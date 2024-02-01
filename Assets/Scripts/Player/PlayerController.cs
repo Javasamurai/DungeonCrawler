@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float shootDelay = 0.5f;
-    public float fps = 10.0f;
-    
+    [Header("Configs")]
+    [SerializeField] private PlayerConfig playerConfig;
+    [SerializeField] private PowerupConfig powerupConfig;
+
+    [Header("Animation")]
+
     [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private RenderInfo[] headRender;
     [SerializeField] private RenderInfo[] bodyRender;
@@ -20,19 +22,24 @@ public class PlayerController : MonoBehaviour
     private CharacterAnimator characterAnimatorBody;
     
     public bool isMoving;
+    private float bulletScale = 1;
+    private float shootDelay = 0.5f;
     private bool isReverseControls;
     private Rigidbody2D rigidbody2D;
     private Vector3 lookDirection = Vector3.up;
     private Direction moveDirection = Direction.Down;
     private float shootTime;
-
+    private Camera mainCamera;
+    
     private void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         characterAnimatorHead = new CharacterAnimator();
         characterAnimatorBody = new CharacterAnimator();
-        characterAnimatorHead.Init(headRenderer, (int) fps);
-        characterAnimatorBody.Init(bodyRenderer, (int) fps);
+        characterAnimatorHead.Init(headRenderer, (int) playerConfig.fps);
+        characterAnimatorBody.Init(bodyRenderer, (int) playerConfig.fps);
+        mainCamera = Camera.main;
+        shootDelay = playerConfig.shootDelay;
     }
 
     private void Update()
@@ -54,7 +61,7 @@ public class PlayerController : MonoBehaviour
         var shootDirectionX = Input.GetAxis("Fire1");
         var shootDirectionY = Input.GetAxis("Fire2");
         
-        transform.Translate(new Vector3(x, y, 0) * (Time.deltaTime * speed));
+        transform.Translate(new Vector3(x, y, 0) * (Time.deltaTime * playerConfig.speed));
         
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, collider2D.bounds.min.x, collider2D.bounds.max.x), 
             Mathf.Clamp(transform.position.y, collider2D.bounds.min.y, collider2D.bounds.max.y), 0);
@@ -101,7 +108,7 @@ public class PlayerController : MonoBehaviour
         lookDirection = lookDirection.normalized;
         bullet.direction = lookDirection;
         shootTime = Time.time;
-        bullet.Shoot(true);
+        bullet.Shoot( bulletScale, true);
     }
 
     public void TakeDamage(float damageValue)
@@ -112,7 +119,7 @@ public class PlayerController : MonoBehaviour
     
     private void ShakeCamera()
     {
-        
+        mainCamera.GetComponent<CameraShake>().Shake();
     }
 
     public void AquirePowerup(Powerup currentPowerup)
@@ -120,13 +127,14 @@ public class PlayerController : MonoBehaviour
         switch (currentPowerup)
         {
             case Powerup.BIGG:
-                transform.localScale = new Vector3(transform.localScale.x * 2, transform.localScale.y * 2, 1);
+                transform.localScale = new Vector3(transform.localScale.x * powerupConfig.bigScale, transform.localScale.y * powerupConfig.bigScale, 1);
                 break;
             case Powerup.TIME:
-                Time.timeScale = 1.5f;
+                Time.timeScale = powerupConfig.timeScale;
                 break;
             case Powerup.DOT:
-                bulletPrefab.transform.localScale = new Vector3(.1f, .1f, 1);
+                bulletScale = powerupConfig.bulletScale;
+                shootDelay = powerupConfig.shootDelay;
                 break;
             case Powerup.MISDIRECT:
                 isReverseControls = true;
@@ -141,20 +149,22 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Door"))
         {
-            if (GameManager.Instance.IsAllEnemiesDead())
+            if (GameManager.Instance.AreAllEnemiesDead())
             {
+                AudioManager.Instance.PlaySFX(SoundType.DOOR_OPEN);
                 GameManager.Instance.EnterNextRoom();
                 ResetPlayer();
             }
         }
     }
     
-    public void ResetPlayer()
+    private void ResetPlayer()
     {
         transform.localScale = new Vector3(2, 2, 1);
         Time.timeScale = 1;
         isReverseControls = false;
         bulletPrefab.transform.localScale = Vector3.one;
+        bulletScale = 1;
     }
 
     public void Knockback(Vector3 transformPosition)
@@ -166,7 +176,13 @@ public class PlayerController : MonoBehaviour
     
     IEnumerator ResetVelocity()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         rigidbody2D.velocity = Vector2.zero;
+    }
+
+    public void Reset()
+    {
+        ResetPlayer();
+        health.Reset();
     }
 }

@@ -6,12 +6,6 @@ public class Turret : EnemyController
     [SerializeField] private float shootDelay = 0.5f;
     private float shootDelayTimer;
 
-    protected override void Awake()
-    {
-        base.Awake();
-        shootDelay += Time.time;
-    }
-
     protected override void Move()
     {
         // Turret doesn't move

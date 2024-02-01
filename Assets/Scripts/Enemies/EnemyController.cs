@@ -55,7 +55,7 @@ public abstract class EnemyController : MonoBehaviour
     {
         var bullet = Instantiate<Bullet>(bulletPrefab, transform.position, Quaternion.identity);
         bullet.direction = (player.transform.position - transform.position).normalized;
-        bullet.Shoot(false);
+        bullet.Shoot();
     }
     
     protected virtual void Update()

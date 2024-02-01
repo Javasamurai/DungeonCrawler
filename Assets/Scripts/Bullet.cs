@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     public Vector3 direction;
     private bool active;
     private bool isPlayerBullet;
+    private float scale = 1;
 
     private void Start()
     {
@@ -17,23 +18,31 @@ public class Bullet : MonoBehaviour
     {
         if (!active) return;
         
-        transform.Translate(direction * Time.deltaTime * speed);
+        transform.Translate(direction * Time.deltaTime * speed * scale);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         var enemyController = other.gameObject.GetComponent<EnemyController>();
+        var playerController = other.gameObject.GetComponent<PlayerController>();
         
         if (enemyController != null && isPlayerBullet)
         {
             enemyController.DealDamage(10);
             Destroy(gameObject);
         }
+        else if (playerController != null && !isPlayerBullet)
+        {
+            playerController.TakeDamage(10);
+            Destroy(gameObject);
+        }
     }
 
-    public void Shoot(bool isPlayerBullet)
+    public void Shoot(float _scale = 1, bool _isPlayerBullet = false)
     {
-        this.isPlayerBullet = isPlayerBullet;
+        this.isPlayerBullet = _isPlayerBullet;
+        this.scale = _scale;
+        transform.localScale = new Vector3(scale, scale, 1);
         active = true;
         AudioManager.Instance.PlaySFX(SoundType.PLAYER_ATTACK);
     }

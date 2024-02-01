@@ -9,7 +9,7 @@ public class EnemyHealth : Health
     {
         base.TakeDamage(damage);
         var randomValue = Random.Range(0, 2);
-        AudioManager.Instance.PlaySFX(randomValue == 0 ? SoundType.PLAYER_HURT_1 : SoundType.PLAYER_HURT_2);
+        AudioManager.Instance.PlaySFX(randomValue == 0 ? SoundType.ENEMY_HURT_1 : SoundType.ENEMY_HURT_2);
     }
     protected override void Die()
     {
@@ -19,7 +19,8 @@ public class EnemyHealth : Health
         {
             coll.enabled = false;
         }
-        AudioManager.Instance.PlaySFX(SoundType.PLAYER_EXPLODE);
-        Destroy(this.gameObject, 3);
+        var randomValue = Random.Range(0, 2);
+        AudioManager.Instance.PlaySFX(randomValue == 0 ? SoundType.ENEMY_DEATH_1 : SoundType.ENEMY_DEATH_2);
+        Destroy(this.gameObject, 2);
     }
 }

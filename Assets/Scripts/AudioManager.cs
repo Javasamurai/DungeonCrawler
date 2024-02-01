@@ -23,9 +23,11 @@ public class AudioManager : MonoBehaviour
         }
     }
     
-    public void PlayBGM(AudioClip clip)
+    public void PlayBGM(SoundType soundType)
     {
-        bgmSource.clip = clip;
+        Sound sound = Array.Find(sounds, s => s.soundType == soundType);
+
+        bgmSource.clip = sound.clip;
         bgmSource.Play();
     }
     
@@ -40,14 +42,27 @@ public class AudioManager : MonoBehaviour
         }
         sfxSource.Play();
     }
+
+    public void StopBGM()
+    {
+        bgmSource.Stop();
+    }
 }
 
 public enum SoundType
 {
+    BGM_MENU,
     PLAYER_ATTACK,
     PLAYER_HURT_1,
     PLAYER_HURT_2,
-    PLAYER_EXPLODE
+    ENEMY_HURT_1,
+    ENEMY_HURT_2,
+    ENEMY_DEATH_1,
+    ENEMY_DEATH_2,
+    PLAYER_DEATH,
+    POWER_UP,
+    DOOR_OPEN,
+    GAME_END
 }
 
 [Serializable]
