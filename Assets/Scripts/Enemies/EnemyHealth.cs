@@ -4,6 +4,7 @@ public class EnemyHealth : Health
 {
     [SerializeField] private SpriteRenderer headRenderer;
     [SerializeField] private SpriteRenderer bodyRenderer;
+    [SerializeField] private Collider2D collider2D;
 
     public override void TakeDamage(float damage)
     {
@@ -15,9 +16,9 @@ public class EnemyHealth : Health
     {
         // Show a death animation
         headRenderer.enabled = false;
-        if (gameObject.TryGetComponent<Collider2D>(out Collider2D coll))
+        if (collider2D != null)
         {
-            coll.enabled = false;
+            collider2D.enabled = false;
         }
         var randomValue = Random.Range(0, 2);
         AudioManager.Instance.PlaySFX(randomValue == 0 ? SoundType.ENEMY_DEATH_1 : SoundType.ENEMY_DEATH_2);

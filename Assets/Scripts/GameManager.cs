@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] Collider2D boundary;
+    [SerializeField] private Collider2D boundary;
     [SerializeField]
     private TextMeshProUGUI powerupText;
     [SerializeField]
@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour
     public bool Won
     {
         get { return won; }
+    }
+    
+    public PlayerController Player
+    {
+        get { return player; }
     }
 
     [SerializeField]

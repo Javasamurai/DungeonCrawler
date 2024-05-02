@@ -279,7 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1244016946c948d7acc5f4920ad831bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
+  maxChaseSpeed: 3
+  minChaseSpeed: 1
   health: {fileID: 8553181069638615318}
   headRender:
   - animationFrames:
@@ -345,6 +346,7 @@ MonoBehaviour:
   bodyRenderer: {fileID: 4183341669986400997}
   fps: 10
   damageValue: 1
+  bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
   maxMoveSpeed: 2
   minMoveSpeed: 1
 --- !u!114 &8553181069638615318
@@ -361,3 +363,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headRenderer: {fileID: 1790305215731275691}
   bodyRenderer: {fileID: 4183341669986400997}
+  collider2D: {fileID: 617639669058735819}

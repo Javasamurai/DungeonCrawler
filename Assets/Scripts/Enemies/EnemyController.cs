@@ -2,14 +2,13 @@ using UnityEngine;
 
 public abstract class EnemyController : MonoBehaviour
 {
-    [SerializeField] protected Bullet bulletPrefab;
-    [SerializeField] private Health health;
     private CharacterAnimator characterAnimatorHead;
     private CharacterAnimator characterAnimatorBody;
     private Direction moveDirection = Direction.Down;
     
-    [SerializeField] float maxChaseSpeed = 3.0f;
-    [SerializeField] float minChaseSpeed = 1.0f;
+    [SerializeField] private float maxChaseSpeed = 3.0f;
+    [SerializeField] private float minChaseSpeed = 1.0f;
+    [SerializeField] private Health health;
     
     [SerializeField] private RenderInfo[] headRender;
     [SerializeField] private RenderInfo[] bodyRender;
@@ -17,17 +16,22 @@ public abstract class EnemyController : MonoBehaviour
     [SerializeField] private SpriteRenderer bodyRenderer;
     [SerializeField] private float fps = 10.0f;
     [SerializeField] protected float damageValue = 10;
-    public bool isDead => health.isDead;
-    protected bool canMove = true;
+
     private float chaseSpeed = 3.0f;
     private bool isChasing = false;
-    protected bool isMoving = false;
-    protected bool turnBased = false;
+    private bool turnBased = false;
+
+    [SerializeField] protected Bullet bulletPrefab;
+    protected bool canMove = true;
     protected PlayerController player;
+    protected bool isMoving = false;
     
+
+    public bool isDead => health.isDead;
+
     protected virtual void Awake()
     {
-        player = FindObjectOfType<PlayerController>();
+        player = GameManager.Instance.Player;
         isChasing = false;
         canMove = true;
         characterAnimatorHead = new CharacterAnimator();

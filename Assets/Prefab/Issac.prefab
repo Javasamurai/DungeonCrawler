@@ -133,8 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e89a2b8c9544d218538e7a63978e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDelay: 0.5
-  playerConfig: {fileID: 11400000, guid: e4f3aadc04e2a41d0835d49f9e768dd2, type: 2}
+  playerData: {fileID: 11400000, guid: e4f3aadc04e2a41d0835d49f9e768dd2, type: 2}
   powerupConfig: {fileID: 11400000, guid: 38673bd4c7cc1475caa33fc8eb6c3f27, type: 2}
   bulletPrefab: {fileID: 757572190901268581, guid: 7a74bffa272a346c39f30bf040cc15e6, type: 3}
   headRender:
@@ -181,7 +180,8 @@ MonoBehaviour:
     flipX: 0
   headRenderer: {fileID: 7249199730192344552}
   bodyRenderer: {fileID: 2675642413250766325}
-  collider2D: {fileID: 0}
+  collider2D: {fileID: 2121407578597467533}
+  rigidbody2D: {fileID: 689716877438514607}
   health: {fileID: 7059493070089594646}
   isMoving: 0
 --- !u!50 &689716877438514607
